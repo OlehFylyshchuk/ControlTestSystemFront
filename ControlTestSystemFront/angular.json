@@ -1,18 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "28ab5e88-5374-4554-9b61-bebd3f0d1954"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ControlTestSystemFront": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ControlTestSystemFront",
+            "outputPath": "dist/control-test-system-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -104,6 +97,5 @@
         }
       }
     }
-  },
-  "defaultProject": "ControlTestSystemFront"
+  }
 }
