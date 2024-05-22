@@ -1,0 +1,29 @@
+{
+  "name": "cts-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/cts-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cts-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "cts:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cts:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "cts:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["cts"]
+}
