@@ -1,0 +1,29 @@
+{
+  "name": "student-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/student-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/student-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "student:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "student:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "student:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["student"]
+}
