@@ -25,4 +25,17 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./header/header.component').then((c) => c.HeaderComponent),
   },
+  {
+    path: 'student',
+    loadChildren: () => import('student/Routes').then((m) => m.remoteRoutes),
+  },
+  // {
+  //   path: 'sidebar',
+  //   loadChildren: () => import('student/Routes').then((m) => m.remoteRoutes),
+  // },
+  {
+    path: 'quiz-manager',
+    loadComponent: () =>
+      import('@cts/quiz-manager').then((m) => m.QuizManagerComponent),
+  },
 ];

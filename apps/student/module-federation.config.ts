@@ -4,7 +4,8 @@ const config: ModuleFederationConfig = {
   name: 'student',
 
   exposes: {
-    './Routes': 'apps/student/src/app/remote-entry/entry.routes.ts',
+    //'./Routes': 'apps/student/src/app/remote-entry/entry.routes.ts',
+    './SidebarComponent': 'apps/student/src/app/sidebar/sidebar.component.ts'
     //'./SidebarComponent': './src/app/sidebar/sidebar.component.ts',
   },
   
