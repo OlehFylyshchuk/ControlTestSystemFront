@@ -1,0 +1,7 @@
+<div>
+    <ul>
+      <li *ngFor="let subject of subjects" (click)="onSelect(subject)">
+        {{ subject.name }}
+      </li>
+    </ul>
+</div>

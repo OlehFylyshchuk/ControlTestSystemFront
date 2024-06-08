@@ -1,0 +1,8 @@
+<div>
+    <ul>
+      <li *ngFor="let test of subjectTests" (click)="onSelect(test)">
+        {{ test.name }} (доступно до: {{ test.availableUntil }})
+      </li>
+    </ul>
+</div>
+  
