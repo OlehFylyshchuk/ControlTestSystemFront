@@ -1,0 +1,11 @@
+{
+    "/remoteEntry.json": {
+      "target": "http://localhost:4201",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  }
