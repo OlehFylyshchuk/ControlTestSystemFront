@@ -11,7 +11,7 @@ const routes: Routes = [{
 {
   path: 'student-page',
   loadChildren: () =>
-    loadRemoteModule('student-page', './student-page-main/student-page-main.module').then((m) => m.StudentPageMainModule)
+    loadRemoteModule('student-page', './remoteModule').then((m) => m.StudentPageMainModule)
 },
 
 ];
