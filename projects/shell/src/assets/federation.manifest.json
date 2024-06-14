@@ -1,3 +1,9 @@
 {
-	"mfe1": "http://localhost:4201/remoteEntry.json"
+	"mfe1": "http://localhost:4201/remoteEntry.json",
+	"admin-page": "http://localhost:4202/remoteEntry.json",
+	"test-manager": "http://localhost:4203/remoteEntry.json",
+	"student-page": "http://localhost:4204/remoteEntry.json",
+	"teacher-page": "http://localhost:4205/remoteEntry.json",
+	"auth": "http://localhost:4206/remoteEntry.json"
 }
+
